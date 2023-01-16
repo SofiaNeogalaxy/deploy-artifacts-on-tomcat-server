@@ -1,6 +1,6 @@
 <form action="action_page.php" style="border:1px solid #ccc">
     <div class="container">
-      <h1>Sign Up</h1>
+      <h1>Hello from SofiaNeogalaxy:)</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
       
