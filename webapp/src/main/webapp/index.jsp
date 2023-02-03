@@ -1,46 +1,91 @@
-<form action="action_page.php" style="border:1px solid #ccc">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      .container {
+        background-image: url(https://media.gettyimages.com/photos/digitally-enhanced-shot-of-an-attractive-businesswoman-using-a-laptop-picture-id1322201800?s=612x612);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 20px;
+      }
+
+      .company-name {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .form-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        max-width: 500px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      form {
+        display: inline-block;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-      <h1>Hello from SofiaNeogalaxy!</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      
-
-      <label for="first name"><b>First Name</b></label>
-      <input type="text" placeholder="Enter first name" name="first name" required>
-
-      <br>
-      <label for="last name"><b>Last Name</b></label>
-      <input type="text" placeholder="Enter last name" name="last name" required>
-
-      <br>
-      <label for="DevSecOp"><b>DevSecOp</b></label>
-      <input type="text" placeholder="DevSecOp" name="SofiaNeogalaxy" required>
-
-      <br>
-      <label for="Instagram"><b>Username</b></label>
-      <input type="text" placeholder="Enter Instagram username" name="Instagram username" required>
-
-      <br>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-      
-      <br>
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <br>
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-  
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-  
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-  
-      <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+      <div class="company-name">
+        <h1>SofiaNeogalaxy</h1>
+        <p>Java web application </p>
+        <p>deployed on a Tomcat server  </p>
+        <p>using Docker and Ansible </p>
+       
       </div>
     </div>
-  </form>
+    <div class="form-container">
+      <form action="login" method="post">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" name="username" required>
+        <input type="password" placeholder
