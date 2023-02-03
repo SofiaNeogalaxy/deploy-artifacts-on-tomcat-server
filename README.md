@@ -20,7 +20,7 @@ The repository includes the following files:
 
 1. Clone the repository:
 ```bash
-$ git clone https://github.com/<user>/deploy-artifacts-on-tomcat-server.git
+$ git clone https://github.com/SofiaNeogalaxy/deploy-artifacts-on-tomcat-server.git
 ```
 
 2. Build the Docker image:
